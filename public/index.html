@@ -1,0 +1,46 @@
+
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DreamShop | Monolith</title>
+  <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+<header>
+  <div class="brand">DREAMSHOP | <span style="color: red;">MONOLITH</span></div>
+  <div class="actions">
+    <span class="pill" id="status-app">ระบบ: <b>ปกติ</b></span>
+    <button class="btn" id="btn-open-cart">ตะกร้า🛒</button>
+    <div class="divider"></div>
+    <button class="btn bad" id="btn-crash-cart">ทำให้ตะกร้าล่ม</button>
+    <!-- <button class="btn ghost" id="btn-crash-db">ทำให้ฐานข้อมูลล่ม</button>
+    <button class="btn ghost" id="btn-restore">กู้คืนระบบ</button> -->
+  </div>
+</header>
+
+<main>
+  <h3 class="section-title">สินค้า</h3>
+  <div id="products" class="grid"></div>
+  <div id="notice" class="notice hidden"></div>
+</main>
+
+<!-- Modal Cart -->
+<div id="cart-modal" class="modal-overlay hidden">
+  <div class="modal" role="dialog" aria-modal="true">
+    <header class="modal-header">
+      <h3>ตะกร้าสินค้า</h3>
+      <button class="btn ghost" id="btn-close">ปิด</button>
+    </header>
+    <div id="cart-body" class="cart-body"></div>
+    <div class="footer">
+      <button class="btn ghost" id="btn-clear">ล้างตะกร้า</button>
+      <button class="btn" id="btn-checkout">ชำระเงิน</button>
+    </div>
+  </div>
+</div>
+
+<script src="/assets/app.js" type="module"></script>
+</body>
+</html>

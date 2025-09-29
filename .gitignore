@@ -1,0 +1,22 @@
+# Node dependencies
+node_modules
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build output
+dist
+build
+
+# Environment files (ถ้ามี)
+.env
+.env.local
+.env.*.local
+
+# OS / Editor junk files
+.DS_Store
+Thumbs.db
+
+# Vite cache
+.vite
